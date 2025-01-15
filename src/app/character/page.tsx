@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import Image from "next/image";
 import { questions } from "../data/character";
 import CharacterButton from "@/components/character-button";
 
@@ -94,9 +95,10 @@ export default function CharacterQuiz() {
               ¡Te pareces a {resultCharacter}!
             </p>
             <p className="text-gray-600 mb-4">{characterInfo.description}</p>
-            <img
+            <Image
               src={characterInfo.imageUrl || "/placeholder.svg"}
               alt={resultCharacter}
+              width={200} height={100}
               className="mx-auto mb-4"
               style={{ maxWidth: "200px", borderRadius: "50%" }}
             />
@@ -110,7 +112,7 @@ export default function CharacterQuiz() {
                   key={index}
                   item={{
                     text: answer.text,
-                    correct: true, // En este quiz, todas las respuestas son "correctas"
+                    correct: true,
                   }}
                   isSelected={tempSelection === index}
                   onClick={() => handleAnswer(index)}

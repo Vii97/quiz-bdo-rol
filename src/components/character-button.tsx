@@ -11,17 +11,16 @@ type CharacterButtonProps = {
 
 const CharacterButton: React.FC<CharacterButtonProps> = ({ item, onClick, isSelected }) => {
   // Estilos base del botón
-  let buttonClass = "w-full py-3 px-4 rounded-lg shadow-md text-left transition-colors duration-300";
+  let buttonClass = "w-full py-3 px-4 rounded-lg border border-gray-300 shadow-md text-left transition-colors duration-300";
 
-  // Si el botón está seleccionado, solo aplica las clases de seleccionado sin hover
+  // Si el botón está seleccionado, aplica estilos de fondo negro y texto blanco
   if (isSelected) {
-    buttonClass += "bg-black text-white"; // Estilo fijo cuando está seleccionado
+    buttonClass = `${buttonClass} bg-black text-white`;  // Se aplica cuando está seleccionado
   } else {
-    // Cuando no está seleccionado, aplica el color normal y el hover
-    buttonClass += "bg-white text-gray-900 hover:bg-gray-100 border border-gray-300";
+    // Cuando no está seleccionado, el fondo es blanco con hover
+    buttonClass = `${buttonClass} bg-white text-gray-900 hover:bg-gray-100`;
   }
 
-  // Renderizamos el botón
   return (
     <button onClick={onClick} className={buttonClass}>
       {item.text}

@@ -56,7 +56,7 @@ export default function Quiz({ questions }: QuizProps) {
           </p>
         ) : (
           <>
-            <p className="text-2xl font- text-center mb-6">{question.question}</p>
+            <p className="text-2xl font-semibold text-center mb-6">{question.question}</p>
             <div className="space-y-2">
               {question.answers.map((answer, index) => {
                 // Controlar las clases según si la pregunta ha sido respondida

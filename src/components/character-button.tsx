@@ -18,7 +18,7 @@ const CharacterButton: React.FC<CharacterButtonProps> = ({ item, onClick, isSele
     buttonClass = `${buttonClass} bg-black text-white`;  // Se aplica cuando está seleccionado
   } else {
     // Cuando no está seleccionado, el fondo es blanco con hover
-    buttonClass = `${buttonClass} bg-white text-gray-900 hover:bg-gray-100`;
+    buttonClass = `${buttonClass} bg-white text-black hover:bg-gray-100`;
   }
 
   return (

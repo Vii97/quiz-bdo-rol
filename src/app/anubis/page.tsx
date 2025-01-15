@@ -1,0 +1,14 @@
+"use client"
+import Image from "next/image";
+import Quiz from "@/components/quiz";
+import { questions } from "../data/anubis";
+
+export default function Anubis() {
+  return (
+    <>
+  <h1 className="text-2xl font-bold text-center text-white py-4">Anubis</h1>
+  <Image src="/anubis.jpg" alt="Logo" width={200} height={100} className="mx-auto p-4 border rounded-full" />
+  <Quiz questions={questions} />;
+    </>
+  );
+}

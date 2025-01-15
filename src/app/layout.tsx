@@ -17,7 +17,7 @@ const geistMono = localFont({
 // Título de la app
 export const metadata: Metadata = {
   title: "Quiz rol",
-  description: "A project with Next.",
+  description: "App de cuestionarios de personajes de rol hecha con Next",
 };
 
 // Personalización de la web aquí

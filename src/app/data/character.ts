@@ -60,7 +60,7 @@ export const questions = [
     },
     {
         id: 7,
-        question: "¿De qué forma de enfrentas a las cosas?",
+        question: "¿De qué forma te enfrentas a las cosas?",
         answers: [
             { text: "Pienso rápido y actúo implacable", char: "Akame" },
             { text: "Intento ganar algo de tiempo e improviso o algo de eso", char: "Anubis" },

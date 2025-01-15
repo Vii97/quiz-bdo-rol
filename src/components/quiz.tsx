@@ -89,7 +89,7 @@ export default function Quiz({ questions }: QuizProps) {
                   onClick={handleNextQuestion}
                   className="bg-gray-600 hover:bg-black text-white font-bold py-2 px-4 rounded transition-colors duration-300"
                 >
-                  {currentQuestion < questions.length - 1 ? "Siguiente" : "Volver a empezar"}
+                  {currentQuestion < questions.length - 1 ? "Siguiente" : "Ver resultado"}
                 </button>
               </div>
             )}

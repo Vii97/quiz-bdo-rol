@@ -64,7 +64,7 @@ export const questions = [
         question: "¿Dónde está su cabaña?",
         answers: [
             { text: "En el bosque de Calpheon", correct: false },
-            { text: "En el puerto de guardia de Longifolia", correct: true },
+            { text: "En el puesto de guardia de Longifolia", correct: true },
             { text: "Al norte de Grana", correct: false },
             { text: "En las montañas de Valtarra", correct: false },
         ],

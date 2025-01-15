@@ -51,12 +51,12 @@ export default function Quiz({ questions }: QuizProps) {
     <div className="flex items-center justify-center p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
         {finished ? (
-          <p className="text-2xl font-bold text-center mb-6">
+          <p className="text-2xl text-gray-800 font-bold text-center mb-6">
             Tu puntuación es: {score}/{questions.length}
           </p>
         ) : (
           <>
-            <p className="text-2xl font-semibold text-center mb-6">{question.question}</p>
+            <p className="text-2xl font-semibold text-center text-gray-800 mb-6">{question.question}</p>
             <div className="space-y-2">
               {question.answers.map((answer, index) => {
                 // Controlar las clases según si la pregunta ha sido respondida
@@ -69,7 +69,7 @@ export default function Quiz({ questions }: QuizProps) {
                     buttonClass += " bg-red-500 text-white"; // Incorrecta: roja
                   }
                 } else {
-                  buttonClass += " hover:bg-gray-200"; // Hover normal si no se ha respondido
+                  buttonClass += " text-gray-800 hover:bg-gray-200"; // Hover normal si no se ha respondido
                 }
                 
                 return (

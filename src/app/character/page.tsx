@@ -88,7 +88,7 @@ export default function CharacterQuiz() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-center mb-6">¿A qué personaje te pareces?</h2>
+        <h2 className="text-2xl text-gray-800 font-bold text-center mb-6">¿A qué personaje te pareces?</h2>
         {finished ? (
           <div className="text-center">
             <p className="text-lg font-bold text-gray-800 mb-4">
